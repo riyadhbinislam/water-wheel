@@ -1,0 +1,111 @@
+#carousel {
+  position: relative;
+  height: 50vh;
+  top: 50%;
+
+}
+
+#carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+#carousel div img {
+  height: 100%;
+  transition: width 1s, height 1s;
+}
+
+#carousel div.hideLeft {
+  left: -10%;
+  opacity: 0.2;
+  transform: translate(-73%, 64%);
+}
+
+#carousel div.hideLeft img {
+  height: 200px;
+}
+
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0.2;
+  transform: translate(0%, 64%);
+}
+
+#carousel div.hideRight img {
+  height: 200px;
+}
+
+#carousel div.prev {
+  z-index: 5;
+  left: 18%;
+  transform: translate(-50%, 18%);
+}
+
+#carousel div.prev img {
+  height: 350px;
+}
+
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 0;
+  transform: translate(-50%, 30%);
+  opacity: 0.6;
+}
+
+#carousel div.prevLeftSecond img {
+  height: 300px;
+}
+
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#carousel div.selected img {
+  height: 500px;
+}
+
+#carousel div.next {
+  z-index: 5;
+  left: 82%;
+  transform: translate(-50%, 18%);
+}
+
+#carousel div.next img {
+  height: 350px;
+}
+
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 65%;
+  transform: translate(0, 30%);
+  opacity: 0.6;
+}
+
+#carousel div.nextRightSecond img {
+  height: 300px;
+}
+
+.buttons {
+  margin: 30px auto;
+  width: fit-content;
+}
+
+/**  Media Uploader CSS     */
+
+.image-preview-item {
+  width: fit-content !important;!i;!;
+  position: relative;
+}
+
+#image-preview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
